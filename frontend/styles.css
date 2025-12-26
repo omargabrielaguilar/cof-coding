@@ -1,25 +1,25 @@
 @import "tailwindcss";
 
 @theme {
-  --color-pixl: #b347ed;
-  --color-pixl-light: #eeeeee;
-  --color-pixl-dark: #090909;
+    --color-eyes-care: #b347ed;
+    --color-eyes-care-light: #eeeeee;
+    --color-eyes-care-dark: #090909;
 
-  --font-pixl: "Departure Mono", monospace;
-  --default-font-family: var(--font-pixl);
+    --font-eyes-care: "Departure Mono", monospace;
+    --default-font-family: var(--font-eyes-care);
 }
 
 @layer base {
-  *:focus-visible {
-    outline: 2px solid var(--color-pixl);
-  }
+    *:focus-visible {
+        outline: 2px solid var(--color-eyes-care);
+    }
 }
 
 @font-face {
-  font-family: "Departure Mono";
-  src:
-    url("/fonts/DepartureMono-Regular.woff2") format("woff2"),
-    url("/fonts/DepartureMono-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Departure Mono";
+    src:
+        url("/fonts/DepartureMono-Regular.woff2") format("woff2"),
+        url("/fonts/DepartureMono-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
 }

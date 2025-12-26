@@ -1,6 +1,6 @@
-<x-layout :title="'Feed - PIXL'">
+<x-layout :title="'Feed - EYES CARE'">
 
-  <body class="bg-pixl-dark text-pixl-light flex gap-8 px-4 sm:h-dvh sm:overflow-clip xl:gap-16">
+  <body class="bg-eyes-care-dark text-eyes-care-light flex gap-8 px-4 sm:h-dvh sm:overflow-clip xl:gap-16">
     {{-- Navigation --}}
     @include('partials.navigation')
 
@@ -11,106 +11,25 @@
           <ul class="flex min-w-max justify-end gap-8 text-sm">
             <li><a href="#">For you</a></li>
             <li>
-              <a class="text-pixl-light/60 hover:text-pixl-light/80" href="#">Idea streams</a>
+              <a class="text-eyes-care-light/60 hover:text-eyes-care-light/80" href="#">Idea streams</a>
             </li>
             <li>
-              <a class="text-pixl-light/60 hover:text-pixl-light/80" href="#">Following</a>
+              <a class="text-eyes-care-light/60 hover:text-eyes-care-light/80" href="#">Following</a>
             </li>
           </ul>
         </nav>
       </div>
 
       {{-- Post prompt --}}
-      <div class="border-pixl-light/10 mt-8 flex items-start gap-4 border-b pb-4">
+      <div class="border-eyes-care-light/10 mt-8 flex items-start gap-4 border-b pb-4">
         <a href="/profile" class="shrink-0">
           <img src="/images/adrian.png" alt="Avatar for Adrian" class="size-10 object-cover" />
         </a>
-        <form class="grow" action="">
-          <label class="sr-only" for="post">Post body</label>
-          <textarea class="w-full resize-none text-lg" name="post" id="post"
-            placeholder="What's up _adrian?"></textarea>
-          <div class="flex items-center justify-between gap-4">
-            <div class="flex gap-4">
-              <button type="button">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6" fill="none" viewBox="0 0 24 19">
-                  <g fill="#EEE" clip-path="url(#a)">
-                    <path
-                      d="M1.598 1.584h-1.6v1.584h1.6V1.584ZM3.196 0h-1.6v1.584h1.6V0Zm1.601 0h-1.6v1.584h1.6V0ZM6.4 0H4.8v1.584h1.6V0ZM8 0H6.4v1.584H8V0Z" />
-                    <path d="M9.598 0h-1.6v1.584h1.6V0Zm1.6 0h-1.6v1.584h1.6V0Z" />
-                    <path
-                      d="M12.794 0h-1.6v1.584h1.6V0ZM14.4 0h-1.6v1.584h1.6V0ZM16 0h-1.6v1.584H16V0Zm1.6 0H16v1.584h1.6V0ZM3.196 12.668h-1.6v1.583h1.6v-1.583Zm1.601-1.584h-1.6v1.584h1.6v-1.584ZM6.4 9.5H4.8v1.584h1.6V9.501ZM8 11.084H6.4v1.584H8v-1.584Zm1.598 1.584h-1.6v1.583h1.6v-1.583Zm1.6-1.584h-1.6v1.584h1.6v-1.584ZM12.794 9.5h-1.6v1.584h1.6V9.501ZM14.4 7.917h-1.6V9.5h1.6V7.917ZM16 6.333h-1.6v1.584H16V6.333Zm1.6 1.584H16V9.5h1.6V7.917ZM19.196 9.5h-1.6v1.584h1.6V9.501Zm1.6 1.584h-1.6v1.584h1.6v-1.584Zm1.604 1.584h-1.6v1.583h1.6v-1.583Z" />
-                    <path d="M19.196 0h-1.6v1.584h1.6V0Z" />
-                    <path
-                      d="M20.796 0h-1.6v1.584h1.6V0ZM22.4 0h-1.6v1.584h1.6V0ZM1.598 3.168h-1.6V4.75h1.6V3.168Zm0 1.584h-1.6v1.583h1.6V4.752Z" />
-                    <path
-                      d="M1.598 6.333h-1.6v1.584h1.6V6.333Zm0 1.584h-1.6V9.5h1.6V7.917Zm0 1.583h-1.6v1.584h1.6V9.501Zm0 1.584h-1.6v1.584h1.6v-1.584Zm0 1.584h-1.6v1.583h1.6v-1.583Z" />
-                    <path d="M1.598 14.25h-1.6v1.584h1.6V14.25Z" />
-                    <path
-                      d="M1.598 15.834h-1.6v1.583h1.6v-1.583Zm22.403-14.25h-1.6v1.584h1.6V1.584Zm0 1.584h-1.6V4.75h1.6V3.168Zm0 1.584h-1.6v1.583h1.6V4.752Z" />
-                    <path
-                      d="M24.001 6.333h-1.6v1.584h1.6V6.333Zm0 1.584h-1.6V9.5h1.6V7.917Zm0 1.583h-1.6v1.584h1.6V9.501Zm0 1.584h-1.6v1.584h1.6v-1.584Zm0 1.584h-1.6v1.583h1.6v-1.583Z" />
-                    <path d="M24.001 14.25h-1.6v1.584h1.6V14.25Z" />
-                    <path
-                      d="M24.001 15.834h-1.6v1.583h1.6v-1.583ZM3.196 17.418h-1.6V19h1.6v-1.583Zm1.601 0h-1.6V19h1.6v-1.583Zm1.603 0H4.8V19h1.6v-1.583Zm1.6 0H6.4V19H8v-1.583Z" />
-                    <path d="M9.598 17.418h-1.6V19h1.6v-1.583Zm1.6 0h-1.6V19h1.6v-1.583Z" />
-                    <path
-                      d="M12.794 17.418h-1.6V19h1.6v-1.583Zm1.606 0h-1.6V19h1.6v-1.583Zm1.6 0h-1.6V19H16v-1.583Zm1.6 0H16V19h1.6v-1.583Z" />
-                    <path d="M19.196 17.418h-1.6V19h1.6v-1.583Z" />
-                    <path
-                      d="M20.796 17.418h-1.6V19h1.6v-1.583Zm1.604 0h-1.6V19h1.6v-1.583ZM8 4.752H6.4v1.583H8V4.752Zm1.598-1.584h-1.6V4.75h1.6V3.168Zm1.6 1.584h-1.6v1.583h1.6V4.752Z" />
-                    <path d="M9.598 6.333h-1.6v1.584h1.6V6.333Z" />
-                  </g>
-                  <defs>
-                    <clipPath id="a">
-                      <path fill="#fff" d="M0 0h24v19H0z" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </button>
-              <button type="button">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-6" viewBox="0 0 24 19">
-                  <g fill="#EEE" clip-path="url(#a)">
-                    <path d="M1.602 1.584h-1.6v1.584h1.6V1.584ZM3.202 0h-1.6v1.584h1.6V0Zm1.601 0h-1.6v1.584h1.6V0Z" />
-                    <path d="M6.403 0h-1.6v1.584h1.6V0Z" />
-                    <path
-                      d="M8.001 0h-1.6v1.584h1.6V0Zm1.601 0h-1.6v1.584h1.6V0Zm1.6 0h-1.6v1.584h1.6V0Zm1.6 0h-1.6v1.584h1.6V0Zm1.6 0h-1.6v1.584h1.6V0Zm1.601 0h-1.6v1.584h1.6V0Zm1.6 0h-1.6v1.584h1.6V0Z" />
-                    <path d="M19.203 0h-1.6v1.584h1.6V0Z" />
-                    <path d="M20.8 0h-1.6v1.584h1.6V0Z" />
-                    <path d="M22.4 0h-1.6v1.584h1.6V0ZM1.602 3.167h-1.6v1.584h1.6V3.167Z" />
-                    <path
-                      d="M1.602 4.75h-1.6v1.584h1.6V4.751Zm0 1.584h-1.6v1.583h1.6V6.334Zm0 1.584h-1.6V9.5h1.6V7.918Zm0 1.582h-1.6v1.584h1.6V9.5Z" />
-                    <path
-                      d="M1.602 11.083h-1.6v1.584h1.6v-1.584Zm0 1.584h-1.6v1.583h1.6v-1.583Zm0 1.583h-1.6v1.583h1.6V14.25Zm0 1.584h-1.6v1.583h1.6v-1.583ZM24 1.584h-1.6v1.583H24V1.584Zm0 1.583h-1.6v1.584H24V3.167Z" />
-                    <path d="M24 4.75h-1.6v1.584H24V4.751Zm0 1.584h-1.6v1.583H24V6.334Zm0 1.583h-1.6v1.584H24V7.917Z" />
-                    <path d="M24 9.5h-1.6v1.584H24V9.5Zm0 1.584h-1.6v1.583H24v-1.583Zm0 1.583h-1.6v1.584H24v-1.584Z" />
-                    <path
-                      d="M24 14.25h-1.6v1.583H24V14.25Zm0 1.583h-1.6v1.584H24v-1.584ZM3.202 17.417h-1.6V19h1.6v-1.583Zm1.601 0h-1.6V19h1.6v-1.583Z" />
-                    <path d="M6.403 17.417h-1.6V19h1.6v-1.583Z" />
-                    <path
-                      d="M8.001 17.417h-1.6V19h1.6v-1.583Zm1.601 0h-1.6V19h1.6v-1.583Zm1.6 0h-1.6V19h1.6v-1.583Zm1.6 0h-1.6V19h1.6v-1.583Zm1.6 0h-1.6V19h1.6v-1.583Zm1.601 0h-1.6V19h1.6v-1.583Zm1.6 0h-1.6V19h1.6v-1.583Z" />
-                    <path d="M19.203 17.417h-1.6V19h1.6v-1.583Z" />
-                    <path d="M20.8 17.417h-1.6V19h1.6v-1.583Z" />
-                    <path
-                      d="M22.4 17.417h-1.6V19h1.6v-1.583ZM11.202 3.167h-1.6v1.584h1.6V3.167Zm-1.6 1.584h-1.6v1.583h1.6V4.751Zm0 1.583h-1.6v1.583h1.6V6.334Zm0 1.583h-1.6v1.584h1.6V7.917Z" />
-                    <path
-                      d="M9.602 9.5h-1.6v1.584h1.6V9.5Zm0 1.584h-1.6v1.583h1.6v-1.583Zm0 1.583h-1.6v1.584h1.6v-1.584Zm1.6 1.583h-1.6v1.583h1.6V14.25Zm6.401-6.333h-1.6v1.584h1.6V7.917Z" />
-                    <path
-                      d="M17.603 9.5h-1.6v1.584h1.6V9.5Zm-1.6-3.166h-1.6v1.583h1.6V6.334ZM14.402 4.75h-1.6v1.584h1.6V4.751Zm-1.6-1.583h-1.6v1.584h1.6V3.167Zm3.201 7.917h-1.6v1.583h1.6v-1.583Zm-1.601 1.583h-1.6v1.584h1.6v-1.584Zm-1.6 1.583h-1.6v1.583h1.6V14.25Z" />
-                  </g>
-                  <defs>
-                    <clipPath id="a">
-                      <path fill="#fff" d="M0 0h24v19H0z" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </button>
-            </div>
-            <button type="submit"
-              class="bg-pixl hover:bg-pixl/90 active:bg-pixl/95 text-pixl-dark border border-transparent px-4 py-1 text-sm">
-              Post
-            </button>
-          </div>
-        </form>
+        @include('partials.post-form', [
+        'labelText' => 'Post body',
+        'fieldName' => 'post',
+        'placeholder'=> "What's happening?",
+        ])
       </div>
 
       <!-- Feed -->
@@ -121,26 +40,27 @@
             <img src="/images/amanda.png" alt="Avatar for amanda" class="size-10 object-cover" />
           </a>
           <div class="grow pt-1.5">
-            <div class="border-pixl-light/10 border-b pb-5">
+            <div class="border-eyes-care-light/10 border-b pb-5">
               <!-- User meta -->
               <div class="flex items-center justify-between gap-4">
                 <div class="flex items-center gap-2.5">
                   <p><a class="hover:underline" href="/profile">amanda</a></p>
-                  <p class="text-pixl-light/40 text-xs">3h</p>
+                  <p class="text-eyes-care-light/40 text-xs">3h</p>
                   <p>
-                    <a class="text-pixl-light/40 hover:text-pixl-light/60 text-xs" href="/profile">@mmich_jj</a>
+                    <a class="text-eyes-care-light/40 hover:text-eyes-care-light/60 text-xs"
+                      href="/profile">@mmich_jj</a>
                   </p>
                 </div>
                 <button class="group flex gap-0.75 py-2" aria-label="Post options">
-                  <span class="bg-pixl-light/40 group-hover:bg-pixl-light/60 size-1"></span>
-                  <span class="bg-pixl-light/40 group-hover:bg-pixl-light/60 size-1"></span>
-                  <span class="bg-pixl-light/40 group-hover:bg-pixl-light/60 size-1"></span>
+                  <span class="bg-eyes-care-light/40 group-hover:bg-eyes-care-light/60 size-1"></span>
+                  <span class="bg-eyes-care-light/40 group-hover:bg-eyes-care-light/60 size-1"></span>
+                  <span class="bg-eyes-care-light/40 group-hover:bg-eyes-care-light/60 size-1"></span>
                 </button>
               </div>
               <!-- Post content -->
-              <div class="[&_a]:text-pixl mt-4 flex flex-col gap-3 text-sm [&_a]:hover:underline">
+              <div class="[&_a]:text-eyes-care mt-4 flex flex-col gap-3 text-sm [&_a]:hover:underline">
                 <p>
-                  I made this! <a href="#">#myartwork</a> <a href="#">#pixl</a>
+                  I made this! <a href="#">#myartwork</a> <a href="#">#eyes-care</a>
                 </p>
                 <img src="/images/simon-chilling.png" alt="" />
               </div>
@@ -149,7 +69,7 @@
                 <div class="flex items-center gap-8">
                   <!-- Like -->
                   <div class="flex items-center gap-1">
-                    <button aria-label="Like" class="hover:text-pixl">
+                    <button aria-label="Like" class="hover:text-eyes-care">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="h-[17px]" viewBox="0 0 20 17">
                         <g fill="currentColor" clip-path="url(#a)">
                           <path
@@ -171,7 +91,7 @@
                   </div>
                   <!-- Comment -->
                   <div class="flex items-center gap-1">
-                    <button aria-label="Comment" class="hover:text-pixl">
+                    <button aria-label="Comment" class="hover:text-eyes-care">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="h-[17px]" viewBox="0 0 20 17">
                         <g fill="currentColor" clip-path="url(#a)">
                           <path d="M3.581 0h1.824v1.824H3.581z" />
@@ -195,7 +115,7 @@
                   </div>
                   <!-- Re-post -->
                   <div class="flex items-center gap-1">
-                    <button aria-label="Re-post" class="hover:text-pixl">
+                    <button aria-label="Re-post" class="hover:text-eyes-care">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="h-[17px]" viewBox="0 0 20 17">
                         <path fill="currentColor" d="M1.429 3.857H0v1.429h1.429V3.857Z" />
                         <path fill="currentColor" d="M2.854 3.857H1.426v1.429h1.428V3.857Z" />
@@ -229,7 +149,7 @@
                 <div class="flex items-center gap-3">
                   <!-- Save -->
                   <div class="flex items-center gap-1">
-                    <button aria-label="Save" class="hover:text-pixl">
+                    <button aria-label="Save" class="hover:text-eyes-care">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="h-[17px]" viewBox="0 0 14 17">
                         <g fill="currentColor" clip-path="url(#a)">
                           <path
@@ -249,11 +169,11 @@
                         </defs>
                       </svg>
                     </button>
-                    <span class="text-pixl-light/40 text-sm">Save</span>
+                    <span class="text-eyes-care-light/40 text-sm">Save</span>
                   </div>
                   <!-- Share -->
                   <div class="flex items-center gap-1">
-                    <button aria-label="Share" class="hover:text-pixl">
+                    <button aria-label="Share" class="hover:text-eyes-care">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="h-[17px]" viewBox="0 0 19 17">
                         <g fill="currentColor" clip-path="url(#a)">
                           <path d="M2.125 6.375H0V8.5h2.125V6.375Z" />
@@ -282,99 +202,16 @@
                 </div>
               </div>
               <!-- Reply form -->
-              <div class="border-pixl-light/10 bg-pixl-light/[3%] mt-8 flex items-start gap-4 border-t p-4">
+              <div class="border-eyes-care-light/10 bg-eyes-care-light/[3%] mt-8 flex items-start gap-4 border-t p-4">
                 <a href="/profile" class="shrink-0">
                   <img src="/images/adrian.png" alt="Avatar for Adrian" class="size-10 object-cover" />
                 </a>
-                <form class="grow" action="">
-                  <label class="sr-only" for="reply">Reply body</label>
-                  <textarea class="w-full resize-none text-sm" rows="5" name="reply" id="reply"
-                    placeholder="Reply to amanda's post"></textarea>
-                  <div class="flex items-center justify-between gap-4">
-                    <div class="flex gap-4">
-                      <button type="button">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6" fill="none" viewBox="0 0 24 19">
-                          <g fill="#EEE" clip-path="url(#a)">
-                            <path
-                              d="M1.598 1.584h-1.6v1.584h1.6V1.584ZM3.196 0h-1.6v1.584h1.6V0Zm1.601 0h-1.6v1.584h1.6V0ZM6.4 0H4.8v1.584h1.6V0ZM8 0H6.4v1.584H8V0Z" />
-                            <path d="M9.598 0h-1.6v1.584h1.6V0Zm1.6 0h-1.6v1.584h1.6V0Z" />
-                            <path
-                              d="M12.794 0h-1.6v1.584h1.6V0ZM14.4 0h-1.6v1.584h1.6V0ZM16 0h-1.6v1.584H16V0Zm1.6 0H16v1.584h1.6V0ZM3.196 12.668h-1.6v1.583h1.6v-1.583Zm1.601-1.584h-1.6v1.584h1.6v-1.584ZM6.4 9.5H4.8v1.584h1.6V9.501ZM8 11.084H6.4v1.584H8v-1.584Zm1.598 1.584h-1.6v1.583h1.6v-1.583Zm1.6-1.584h-1.6v1.584h1.6v-1.584ZM12.794 9.5h-1.6v1.584h1.6V9.501ZM14.4 7.917h-1.6V9.5h1.6V7.917ZM16 6.333h-1.6v1.584H16V6.333Zm1.6 1.584H16V9.5h1.6V7.917ZM19.196 9.5h-1.6v1.584h1.6V9.501Zm1.6 1.584h-1.6v1.584h1.6v-1.584Zm1.604 1.584h-1.6v1.583h1.6v-1.583Z" />
-                            <path d="M19.196 0h-1.6v1.584h1.6V0Z" />
-                            <path
-                              d="M20.796 0h-1.6v1.584h1.6V0ZM22.4 0h-1.6v1.584h1.6V0ZM1.598 3.168h-1.6V4.75h1.6V3.168Zm0 1.584h-1.6v1.583h1.6V4.752Z" />
-                            <path
-                              d="M1.598 6.333h-1.6v1.584h1.6V6.333Zm0 1.584h-1.6V9.5h1.6V7.917Zm0 1.583h-1.6v1.584h1.6V9.501Zm0 1.584h-1.6v1.584h1.6v-1.584Zm0 1.584h-1.6v1.583h1.6v-1.583Z" />
-                            <path d="M1.598 14.25h-1.6v1.584h1.6V14.25Z" />
-                            <path
-                              d="M1.598 15.834h-1.6v1.583h1.6v-1.583Zm22.403-14.25h-1.6v1.584h1.6V1.584Zm0 1.584h-1.6V4.75h1.6V3.168Zm0 1.584h-1.6v1.583h1.6V4.752Z" />
-                            <path
-                              d="M24.001 6.333h-1.6v1.584h1.6V6.333Zm0 1.584h-1.6V9.5h1.6V7.917Zm0 1.583h-1.6v1.584h1.6V9.501Zm0 1.584h-1.6v1.584h1.6v-1.584Zm0 1.584h-1.6v1.583h1.6v-1.583Z" />
-                            <path d="M24.001 14.25h-1.6v1.584h1.6V14.25Z" />
-                            <path
-                              d="M24.001 15.834h-1.6v1.583h1.6v-1.583ZM3.196 17.418h-1.6V19h1.6v-1.583Zm1.601 0h-1.6V19h1.6v-1.583Zm1.603 0H4.8V19h1.6v-1.583Zm1.6 0H6.4V19H8v-1.583Z" />
-                            <path d="M9.598 17.418h-1.6V19h1.6v-1.583Zm1.6 0h-1.6V19h1.6v-1.583Z" />
-                            <path
-                              d="M12.794 17.418h-1.6V19h1.6v-1.583Zm1.606 0h-1.6V19h1.6v-1.583Zm1.6 0h-1.6V19H16v-1.583Zm1.6 0H16V19h1.6v-1.583Z" />
-                            <path d="M19.196 17.418h-1.6V19h1.6v-1.583Z" />
-                            <path
-                              d="M20.796 17.418h-1.6V19h1.6v-1.583Zm1.604 0h-1.6V19h1.6v-1.583ZM8 4.752H6.4v1.583H8V4.752Zm1.598-1.584h-1.6V4.75h1.6V3.168Zm1.6 1.584h-1.6v1.583h1.6V4.752Z" />
-                            <path d="M9.598 6.333h-1.6v1.584h1.6V6.333Z" />
-                          </g>
-                          <defs>
-                            <clipPath id="a">
-                              <path fill="#fff" d="M0 0h24v19H0z" />
-                            </clipPath>
-                          </defs>
-                        </svg>
-                      </button>
-                      <button type="button">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-6" viewBox="0 0 24 19">
-                          <g fill="#EEE" clip-path="url(#a)">
-                            <path
-                              d="M1.602 1.584h-1.6v1.584h1.6V1.584ZM3.202 0h-1.6v1.584h1.6V0Zm1.601 0h-1.6v1.584h1.6V0Z" />
-                            <path d="M6.403 0h-1.6v1.584h1.6V0Z" />
-                            <path
-                              d="M8.001 0h-1.6v1.584h1.6V0Zm1.601 0h-1.6v1.584h1.6V0Zm1.6 0h-1.6v1.584h1.6V0Zm1.6 0h-1.6v1.584h1.6V0Zm1.6 0h-1.6v1.584h1.6V0Zm1.601 0h-1.6v1.584h1.6V0Zm1.6 0h-1.6v1.584h1.6V0Z" />
-                            <path d="M19.203 0h-1.6v1.584h1.6V0Z" />
-                            <path d="M20.8 0h-1.6v1.584h1.6V0Z" />
-                            <path d="M22.4 0h-1.6v1.584h1.6V0ZM1.602 3.167h-1.6v1.584h1.6V3.167Z" />
-                            <path
-                              d="M1.602 4.75h-1.6v1.584h1.6V4.751Zm0 1.584h-1.6v1.583h1.6V6.334Zm0 1.584h-1.6V9.5h1.6V7.918Zm0 1.582h-1.6v1.584h1.6V9.5Z" />
-                            <path
-                              d="M1.602 11.083h-1.6v1.584h1.6v-1.584Zm0 1.584h-1.6v1.583h1.6v-1.583Zm0 1.583h-1.6v1.583h1.6V14.25Zm0 1.584h-1.6v1.583h1.6v-1.583ZM24 1.584h-1.6v1.583H24V1.584Zm0 1.583h-1.6v1.584H24V3.167Z" />
-                            <path
-                              d="M24 4.75h-1.6v1.584H24V4.751Zm0 1.584h-1.6v1.583H24V6.334Zm0 1.583h-1.6v1.584H24V7.917Z" />
-                            <path
-                              d="M24 9.5h-1.6v1.584H24V9.5Zm0 1.584h-1.6v1.583H24v-1.583Zm0 1.583h-1.6v1.584H24v-1.584Z" />
-                            <path
-                              d="M24 14.25h-1.6v1.583H24V14.25Zm0 1.583h-1.6v1.584H24v-1.584ZM3.202 17.417h-1.6V19h1.6v-1.583Zm1.601 0h-1.6V19h1.6v-1.583Z" />
-                            <path d="M6.403 17.417h-1.6V19h1.6v-1.583Z" />
-                            <path
-                              d="M8.001 17.417h-1.6V19h1.6v-1.583Zm1.601 0h-1.6V19h1.6v-1.583Zm1.6 0h-1.6V19h1.6v-1.583Zm1.6 0h-1.6V19h1.6v-1.583Zm1.6 0h-1.6V19h1.6v-1.583Zm1.601 0h-1.6V19h1.6v-1.583Zm1.6 0h-1.6V19h1.6v-1.583Z" />
-                            <path d="M19.203 17.417h-1.6V19h1.6v-1.583Z" />
-                            <path d="M20.8 17.417h-1.6V19h1.6v-1.583Z" />
-                            <path
-                              d="M22.4 17.417h-1.6V19h1.6v-1.583ZM11.202 3.167h-1.6v1.584h1.6V3.167Zm-1.6 1.584h-1.6v1.583h1.6V4.751Zm0 1.583h-1.6v1.583h1.6V6.334Zm0 1.583h-1.6v1.584h1.6V7.917Z" />
-                            <path
-                              d="M9.602 9.5h-1.6v1.584h1.6V9.5Zm0 1.584h-1.6v1.583h1.6v-1.583Zm0 1.583h-1.6v1.584h1.6v-1.584Zm1.6 1.583h-1.6v1.583h1.6V14.25Zm6.401-6.333h-1.6v1.584h1.6V7.917Z" />
-                            <path
-                              d="M17.603 9.5h-1.6v1.584h1.6V9.5Zm-1.6-3.166h-1.6v1.583h1.6V6.334ZM14.402 4.75h-1.6v1.584h1.6V4.751Zm-1.6-1.583h-1.6v1.584h1.6V3.167Zm3.201 7.917h-1.6v1.583h1.6v-1.583Zm-1.601 1.583h-1.6v1.584h1.6v-1.584Zm-1.6 1.583h-1.6v1.583h1.6V14.25Z" />
-                          </g>
-                          <defs>
-                            <clipPath id="a">
-                              <path fill="#fff" d="M0 0h24v19H0z" />
-                            </clipPath>
-                          </defs>
-                        </svg>
-                      </button>
-                    </div>
-                    <button type="submit"
-                      class="bg-pixl/10 hover:bg-pixl/15 active:bg-pixl/20 text-pixl border border-transparent px-4 py-1 text-sm">
-                      Post
-                    </button>
-                  </div>
-                </form>
+                @include('partials.post-form', [
+                'labelText' => 'Reply body',
+                'fieldName' => 'reply',
+                'placeholder'=> "Reply to amanda's post",
+                'rows' => 5,
+                ])
               </div>
             </div>
             <!-- Threaded replies -->
@@ -382,26 +219,28 @@
               <!-- Reply -->
               <li class="group/li relative flex items-start gap-4 pt-4">
                 <!-- Line-through -->
-                <div aria-hidden="true" class="bg-pixl-light/10 absolute top-0 left-5 h-full w-px group-last/li:h-4">
+                <div aria-hidden="true"
+                  class="bg-eyes-care-light/10 absolute top-0 left-5 h-full w-px group-last/li:h-4">
                 </div>
                 <a href="/profile" class="isolate shrink-0">
                   <img src="/images/simon-chilling.png" alt="Avatar for Simon" class="size-10 object-cover" />
                 </a>
-                <div class="border-pixl-light/10 grow border-b pt-1.5 pb-5">
+                <div class="border-eyes-care-light/10 grow border-b pt-1.5 pb-5">
                   <div class="flex items-center justify-between gap-4">
                     <div class="flex items-center gap-2.5">
                       <p>
                         <a class="hover:underline" href="/profile">Simon</a>
                       </p>
-                      <p class="text-pixl-light/40 text-xs">1h</p>
+                      <p class="text-eyes-care-light/40 text-xs">1h</p>
                       <p>
-                        <a class="text-pixl-light/40 hover:text-pixl-light/60 text-xs" href="/profile">@simonswiss</a>
+                        <a class="text-eyes-care-light/40 hover:text-eyes-care-light/60 text-xs"
+                          href="/profile">@simonswiss</a>
                       </p>
                     </div>
                     <button class="group flex gap-0.75 py-2" aria-label="Post options">
-                      <span class="bg-pixl-light/40 group-hover:bg-pixl-light/60 size-1"></span>
-                      <span class="bg-pixl-light/40 group-hover:bg-pixl-light/60 size-1"></span>
-                      <span class="bg-pixl-light/40 group-hover:bg-pixl-light/60 size-1"></span>
+                      <span class="bg-eyes-care-light/40 group-hover:bg-eyes-care-light/60 size-1"></span>
+                      <span class="bg-eyes-care-light/40 group-hover:bg-eyes-care-light/60 size-1"></span>
+                      <span class="bg-eyes-care-light/40 group-hover:bg-eyes-care-light/60 size-1"></span>
                     </button>
                   </div>
                   <div class="mt-4 flex flex-col gap-3 text-sm">
@@ -412,7 +251,7 @@
                     <div class="flex items-center gap-8">
                       <!-- Like -->
                       <div class="flex items-center gap-1">
-                        <button aria-label="Like" class="hover:text-pixl">
+                        <button aria-label="Like" class="hover:text-eyes-care">
                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="h-[17px]" viewBox="0 0 20 17">
                             <g fill="currentColor" clip-path="url(#a)">
                               <path
@@ -434,7 +273,7 @@
                       </div>
                       <!-- Comment -->
                       <div class="flex items-center gap-1">
-                        <button aria-label="Comment" class="hover:text-pixl">
+                        <button aria-label="Comment" class="hover:text-eyes-care">
                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="h-[17px]" viewBox="0 0 20 17">
                             <g fill="currentColor" clip-path="url(#a)">
                               <path d="M3.581 0h1.824v1.824H3.581z" />
@@ -458,7 +297,7 @@
                       </div>
                       <!-- Re-post -->
                       <div class="flex items-center gap-1">
-                        <button aria-label="Re-post" class="hover:text-pixl">
+                        <button aria-label="Re-post" class="hover:text-eyes-care">
                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="h-[17px]" viewBox="0 0 20 17">
                             <path fill="currentColor" d="M1.429 3.857H0v1.429h1.429V3.857Z" />
                             <path fill="currentColor" d="M2.854 3.857H1.426v1.429h1.428V3.857Z" />
@@ -492,7 +331,7 @@
                     <div class="flex items-center gap-3">
                       <!-- Save -->
                       <div class="flex items-center gap-1">
-                        <button aria-label="Save" class="hover:text-pixl">
+                        <button aria-label="Save" class="hover:text-eyes-care">
                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="h-[17px]" viewBox="0 0 14 17">
                             <g fill="currentColor" clip-path="url(#a)">
                               <path
@@ -512,11 +351,11 @@
                             </defs>
                           </svg>
                         </button>
-                        <span class="text-pixl-light/40 text-sm">Save</span>
+                        <span class="text-eyes-care-light/40 text-sm">Save</span>
                       </div>
                       <!-- Share -->
                       <div class="flex items-center gap-1">
-                        <button aria-label="Share" class="hover:text-pixl">
+                        <button aria-label="Share" class="hover:text-eyes-care">
                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="h-[17px]" viewBox="0 0 19 17">
                             <g fill="currentColor" clip-path="url(#a)">
                               <path d="M2.125 6.375H0V8.5h2.125V6.375Z" />
@@ -555,7 +394,7 @@
 
       <footer class="mt-30 ml-14">
         <p class="text-center">That's all, folks!</p>
-        <hr class="border-pixl-light/10 my-4" />
+        <hr class="border-eyes-care-light/10 my-4" />
         <!-- White noise -->
         <div class="h-20 bg-[url(/images/white-noise.gif)]"></div>
       </footer>

@@ -10,7 +10,7 @@
   <title>{{ $title }}</title>
 </head>
 
-<body class="bg-pixl-dark text-pixl-light flex gap-8 px-4 sm:h-dvh sm:overflow-clip xl:gap-16">
+<body class="bg-eyes-care-dark text-eyes-care-light flex gap-8 px-4 sm:h-dvh sm:overflow-clip xl:gap-16">
 
   {{ $slot }}
 
