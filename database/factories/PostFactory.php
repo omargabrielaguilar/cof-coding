@@ -33,7 +33,6 @@ class PostFactory extends Factory
         ]);
     }
 
-
     public function quotePost(Post $originalPost)
     {
         return $this->state([
