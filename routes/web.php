@@ -25,6 +25,22 @@ Route::get('/feed', function () {
             'like_count' => 23,
             'reply_count' => 45,
             'repost_count' => 151,
+            'replies' => [
+                [
+                    'content' => '<p>Heh — this looks just like me!</p>',
+                    'profile' => [
+                        'display_name' => 'Simon',
+                        'handle' => '@simonswiss',
+                        'avatar' => '/images/simon-chilling.png',
+                    ],
+                    'posted_ago' => '2 hours ago',
+                    'content' => '<p>Great job! I love it!</p>',
+                    'like_count' => 5,
+                    'reply_count' => 2,
+                    'repost_count' => 1,
+                ],
+                // add more replies...
+            ],
         ],
         // add more items...
     ];
@@ -53,6 +69,22 @@ Route::get('/profile', function () {
             'like_count' => 11,
             'reply_count' => 12,
             'repost_count' => 2,
+            'replies' => [
+                [
+                    'content' => '<p>Heh — this looks just like me!</p>',
+                    'profile' => [
+                        'display_name' => 'Simon',
+                        'handle' => '@simonswiss',
+                        'avatar' => '/images/simon-chilling.png',
+                    ],
+                    'posted_ago' => '2 hours ago',
+                    'content' => '<p>Great job! I love it!</p>',
+                    'like_count' => 5,
+                    'reply_count' => 2,
+                    'repost_count' => 1,
+                ],
+                // add more replies...
+            ],
         ],
         // add more items...
     ];
