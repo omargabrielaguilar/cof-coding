@@ -18,13 +18,13 @@
     </a>
     <!-- Profile header -->
     <header>
-      <img src="/images/cover.png" alt="" />
+      <img src="{{ $profile->cover_url }}" alt="" />
       <div class="-mt-10 flex flex-wrap items-end justify-between gap-4 md:-mt-16">
         <div class="flex items-end gap-4">
-          <img src="/images/adrian.png" alt="Avatar for Adrian" class="size-20 object-cover md:size-32" />
+          <img src="{{ $profile->avatar_url }}" alt="Avatar for {{ $profile->display_name }}" class="size-20 object-cover md:size-32" />
           <div class="flex flex-col text-sm md:gap-1">
-            <p class="text-lg md:text-xl">_adrian</p>
-            <p class="text-pixl-light/60 text-sm">@tudssss</p>
+            <p class="text-lg md:text-xl">{{ $profile->display_name }}</p>
+            <p class="text-pixl-light/60 text-sm">{{ "@{$profile->handle}"}}</p>
           </div>
         </div>
         <a href="#"
@@ -40,11 +40,11 @@
       </div>
       <dl class="mt-6 flex gap-6">
         <div class="flex gap-1.5">
-          <dd>100</dd>
+          <dd>{{ $profile->followings_count }}</dd>
           <dt class="text-pixl-light/60">Following</dt>
         </div>
         <div class="flex gap-1.5">
-          <dd>2190</dd>
+          <dd>{{ $profile->followers_count }}</dd>
           <dt class="text-pixl-light/60">Followers</dt>
         </div>
       </dl>
@@ -71,7 +71,7 @@
     <!-- Feed -->
     <ol class="border-pixl-light/10 border-t pt-4">
       <!-- Feed -->
-      @foreach ($feedItems as $item)
+      @foreach ($posts as $item)
       @include('partials.feed-item',compact('item'))
       @endforeach
     </ol>
