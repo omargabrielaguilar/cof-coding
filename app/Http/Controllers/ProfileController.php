@@ -26,4 +26,11 @@ class ProfileController extends Controller
 
         return view('profiles.show', compact('profile', 'posts'));
     }
+
+
+        public function replies(Profile $profile)
+    {
+        $profile->loadCount(['followings', 'followers']);
+
+    }
 }

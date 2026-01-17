@@ -2,8 +2,6 @@
 
 namespace Database\Seeders;
 
-use App\Models\Follow;
-use App\Models\Like;
 use App\Models\Post;
 use App\Models\Profile;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -61,7 +59,7 @@ class DatabaseSeeder extends Seeder
 
                 foreach ($toFollow as $followingId) {
                     $key = "{$followerId}-{$followingId}";
-                    if (!isset($followsSet[$key])) {
+                    if (! isset($followsSet[$key])) {
                         $followsData[] = [
                             'follower_profile_id' => $followerId,
                             'following_profile_id' => $followingId,
@@ -87,7 +85,9 @@ class DatabaseSeeder extends Seeder
                     return $pid != $profileId;
                 })->flatten()->pluck('id')->toArray();
 
-                if (empty($availablePosts)) continue;
+                if (empty($availablePosts)) {
+                    continue;
+                }
 
                 $toLikeCount = rand(10, min(20, count($availablePosts)));
                 $toLike = array_rand(array_flip($availablePosts), $toLikeCount);
@@ -95,7 +95,7 @@ class DatabaseSeeder extends Seeder
 
                 foreach ($toLike as $postId) {
                     $key = "{$profileId}-{$postId}";
-                    if (!isset($likesSet[$key])) {
+                    if (! isset($likesSet[$key])) {
                         $likesData[] = [
                             'profile_id' => $profileId,
                             'post_id' => $postId,
@@ -124,7 +124,9 @@ class DatabaseSeeder extends Seeder
                     return $pid != $profileId;
                 })->flatten()->pluck('id')->toArray();
 
-                if (empty($availablePosts)) continue;
+                if (empty($availablePosts)) {
+                    continue;
+                }
 
                 $toRepostCount = rand(2, min(5, count($availablePosts)));
                 $toRepost = array_rand(array_flip($availablePosts), $toRepostCount);
@@ -132,7 +134,7 @@ class DatabaseSeeder extends Seeder
 
                 foreach ($toRepost as $postId) {
                     $key = "{$profileId}-{$postId}";
-                    if (!isset($repostsSet[$key])) {
+                    if (! isset($repostsSet[$key])) {
                         $repostsData[] = [
                             'profile_id' => $profileId,
                             'parent_id' => null,
@@ -146,7 +148,7 @@ class DatabaseSeeder extends Seeder
                 }
             }
 
-            if (!empty($repostsData)) {
+            if (! empty($repostsData)) {
                 DB::table('posts')->insert($repostsData);
             }
 
@@ -172,7 +174,7 @@ class DatabaseSeeder extends Seeder
                 ];
             }
 
-            if (!empty($repliesData)) {
+            if (! empty($repliesData)) {
                 DB::table('posts')->insert($repliesData);
             }
         });

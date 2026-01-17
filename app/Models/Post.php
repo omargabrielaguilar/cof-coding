@@ -60,7 +60,8 @@ class Post extends Model
         ]);
     }
 
-    public function isRepost() : bool {
+    public function isRepost(): bool
+    {
         return $this->repost_of_id !== null;
     }
 
