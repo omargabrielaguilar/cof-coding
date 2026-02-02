@@ -28,7 +28,11 @@ class ProfileController extends Controller
     }
 
 
-        public function replies(Profile $profile)
+    /**
+     * @param Profile $profile
+     * @return void
+     */
+    public function replies(Profile $profile)
     {
         $profile->loadCount(['followings', 'followers']);
 
