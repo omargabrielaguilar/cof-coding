@@ -24,6 +24,7 @@ class Post extends Model
     {
         return $this->belongsTo(Profile::class);
     }
+    // holaaaaa
 
     public function parent(): BelongsTo
     {

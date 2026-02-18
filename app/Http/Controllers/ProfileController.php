@@ -8,7 +8,7 @@ use Illuminate\Contracts\View\View;
 
 class ProfileController extends Controller
 {
-    /**
+    /*
      * @return View
      */
     public function show(Profile $profile)
@@ -27,9 +27,7 @@ class ProfileController extends Controller
         return view('profiles.show', compact('profile', 'posts'));
     }
 
-
     /**
-     * @param Profile $profile
      * @return void
      */
     public function replies(Profile $profile)
